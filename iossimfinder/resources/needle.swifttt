@@ -1,0 +1,29 @@
+//
+//  rzsimneedle.swift
+//
+//  You are free to do whatever you want with this file: modify it, use it, don't use it, no copyrights.
+//
+//
+
+/*
+You need to include this file in your project and modify your app delegate to call the function with code as below:
+
+func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
+    #if arch(i386) || arch(x86_64)
+        RZSimNeedle()
+    #endif
+    return true
+}
+*/
+
+import Foundation
+
+func RZSimNeedle() {
+    let needlePath = NSSearchPathForDirectoriesInDomains( .DocumentDirectory, .UserDomainMask, true)
+    let documentsDirectory = needlePath[0] as String
+    let bundleIdentifier = NSBundle.mainBundle().bundleIdentifier
+    if (bundleIdentifier != nil) {
+        let needle = documentsDirectory + "/.simneedle." + NSBundle.mainBundle().bundleIdentifier!
+        NSData().writeToFile(needle, atomically: true)
+    }
+}

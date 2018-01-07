@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Help Dialog</title>
+<style type="text/css">
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* [disabled]font-size: small; */
+}
+.objectivec {
+	font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+}
+.typeobj{
+	font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+	color: #8909F0;	
+}
+.macroobj{
+	font-family: Consolas, Andale Mono, Lucida Console, Lucida Sans Typewriter, Monaco, Courier New, monospace;
+	color: #DC0E12;
+}
+</style>
+</head>
+
+<body>
+<p>The location of the data container in the iOS Simulator changes every time you start an app. For iOS Simulator Finder to report the current location, you need to save the header file containing the macro <code class=macrobj>RZSimNeedle</code> and include it in your project.</span></p>
+<p>Then you need import that file and add the following line to your <code class="typeobj">UIApplicationDelegate</code> as below:</p>
+<pre><code class=objectivec>
+- (<span class="typeobj">BOOL</span>)application:(<span class="typeobj">UIApplication</span> *)application
+  didFinishLaunchingWithOptions:(<span class="typeobj">NSDictionary</span> *)launchOptions
+{
+    <span class="macroobj">RZSimNeedle</span>();
+</code>
+</pre>
+<p>The macro will create a hidden file of zero size in the document directory so iOS Simulator Finder can find it later</p>
+</body>
+</html>

@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		420622531D3B6C4B0013A45E /* RZUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420622481D3B6C2A0013A45E /* RZUtils.framework */; };
+		420622541D3B6C4B0013A45E /* RZUtilsOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4206224C1D3B6C2A0013A45E /* RZUtilsOSX.framework */; };
+		424C477E1A3B8BE000A54B9B /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424C477D1A3B8BE000A54B9B /* Preferences.xib */; };
+		424C47811A3B8CD500A54B9B /* PreferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 424C47801A3B8CD500A54B9B /* PreferenceViewController.m */; };
+		4260CE591A1DF8B6006535AC /* ISAppGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260CE581A1DF8B6006535AC /* ISAppGlobal.m */; };
+		4260CE5C1A1E01CA006535AC /* ISSimulatorDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260CE5B1A1E01CA006535AC /* ISSimulatorDevice.m */; };
+		4260CE5F1A1E050A006535AC /* ISSimulatorApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260CE5E1A1E050A006535AC /* ISSimulatorApplication.m */; };
+		4263E5DC1A20DB2D004D6574 /* ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4263E5DA1A20DB2D004D6574 /* ipad.png */; };
+		4263E5DD1A20DB2D004D6574 /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4263E5DB1A20DB2D004D6574 /* iphone.png */; };
+		4263E5E01A21FF3F004D6574 /* finder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4263E5DE1A21FF3F004D6574 /* finder.png */; };
+		4263E5E11A21FF3F004D6574 /* terminal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4263E5DF1A21FF3F004D6574 /* terminal.png */; };
+		42A9998B1A1C263B00CE1CEA /* ISSimulatorOrganizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A9998A1A1C263B00CE1CEA /* ISSimulatorOrganizer.m */; };
+		42D1F3691A1FFEBC00A93BB1 /* ISDataSourceDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1F3681A1FFEBC00A93BB1 /* ISDataSourceDevices.m */; };
+		42D1F36C1A1FFEDE00A93BB1 /* ISDataSourceApplications.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1F36B1A1FFEDE00A93BB1 /* ISDataSourceApplications.m */; };
+		42D1F36F1A23E83900A93BB1 /* ISSimulatorDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1F36E1A23E83900A93BB1 /* ISSimulatorDataContainer.m */; };
+		42D3D6971D4BF9FF00918CCB /* RZUtils.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 420622481D3B6C2A0013A45E /* RZUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42D3D6981D4BF9FF00918CCB /* RZUtilsOSX.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4206224C1D3B6C2A0013A45E /* RZUtilsOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		42D3D6A31D4BFC7200918CCB /* ISBasicHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D3D6A21D4BFC7200918CCB /* ISBasicHolder.swift */; };
+		42D403D41A253D8000F1111C /* ISDataSourceDownloads.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D403D31A253D8000F1111C /* ISDataSourceDownloads.m */; };
+		42D403D81A254D7800F1111C /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D403D71A254D7800F1111C /* HelpViewController.m */; };
+		42D405E71A26973900F1111C /* helpdialog.html in Resources */ = {isa = PBXBuildFile; fileRef = 42D405E61A26973900F1111C /* helpdialog.html */; };
+		42D405E91A269BE500F1111C /* needle.hhh in Resources */ = {isa = PBXBuildFile; fileRef = 42D405E81A26999600F1111C /* needle.hhh */; };
+		42D4A2A81A3B0CFA000745ED /* clipboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D4A2A71A3B0CFA000745ED /* clipboard.png */; };
+		42D4A2AA1A3B3A7C000745ED /* helpdialog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42D4A2A91A3B3A7C000745ED /* helpdialog.rtf */; };
+		42EEE2EC1A194D5000E331BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE2EB1A194D5000E331BC /* AppDelegate.m */; };
+		42EEE2EE1A194D5000E331BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE2ED1A194D5000E331BC /* main.m */; };
+		42EEE2F11A194D5000E331BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE2F01A194D5000E331BC /* ViewController.m */; };
+		42EEE2F31A194D5000E331BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EEE2F21A194D5000E331BC /* Images.xcassets */; };
+		42EF0B501A3A3D4F0042E931 /* MainApplication.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EF0B4F1A3A3D4F0042E931 /* MainApplication.xib */; };
+		42EF0B541A3A53F90042E931 /* HelpWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42EF0B531A3A53F90042E931 /* HelpWindow.xib */; };
+		42F135731B8BBDA4006D186A /* ISSimulatorAppExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F135721B8BBDA4006D186A /* ISSimulatorAppExtension.m */; };
+		42F7ADF11A52DBA4009069B9 /* helpswift.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42F7ADF01A52DBA4009069B9 /* helpswift.rtf */; };
+		42F7ADF31A52DD38009069B9 /* needle.swifttt in Resources */ = {isa = PBXBuildFile; fileRef = 42F7ADF21A52DCF6009069B9 /* needle.swifttt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		420622471D3B6C2A0013A45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42249D8819BE3D3A00D2DAA0;
+			remoteInfo = RZUtils;
+		};
+		420622491D3B6C2A0013A45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42249D9319BE3D3B00D2DAA0;
+			remoteInfo = RZUtilsTests;
+		};
+		4206224B1D3B6C2A0013A45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4288E4E21A33101F0079890C;
+			remoteInfo = RZUtilsOSX;
+		};
+		4206224D1D3B6C2A0013A45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4288E4EC1A33101F0079890C;
+			remoteInfo = RZUtilsOSXTests;
+		};
+		4206224F1D3B6C2A0013A45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42BF1F831D3ABC34004445C2;
+			remoteInfo = RZUtilsTouch;
+		};
+		420622511D3B6C2A0013A45E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42BF1F8C1D3ABC34004445C2;
+			remoteInfo = RZUtilsTouchTests;
+		};
+		427CA2151F8A1AA500CCB696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42382A451EAB584600252217;
+			remoteInfo = RZUtilsSwift;
+		};
+		427CA2171F8A1AA500CCB696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42382A4D1EAB584600252217;
+			remoteInfo = RZUtilsSwiftTests;
+		};
+		427CA2191F8A1AA500CCB696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42382AAA1EAC824900252217;
+			remoteInfo = RZUtilsHealthkit;
+		};
+		427CA21B1F8A1AA500CCB696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42382AB21EAC824900252217;
+			remoteInfo = RZUtilsHealthkitTests;
+		};
+		429A3A2520023E7C00671C6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 428BE85420013D4200E14A61;
+			remoteInfo = RZUtilsTestInfra;
+		};
+		42F3FC0B1DD84DBD0042A9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42F3FBAB1DD794650042A9B1;
+			remoteInfo = RZUtilsUniversal;
+		};
+		42F3FC0D1DD84DBD0042A9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 42F3FBB31DD794650042A9B1;
+			remoteInfo = RZUtilsUniversalTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4289C85C1D43CAE400AB07E8 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42D3D6971D4BF9FF00918CCB /* RZUtils.framework in Copy Frameworks */,
+				42D3D6981D4BF9FF00918CCB /* RZUtilsOSX.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RZUtils.xcodeproj; path = RZUtils/RZUtils.xcodeproj; sourceTree = "<group>"; };
+		424C477D1A3B8BE000A54B9B /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		424C477F1A3B8CD500A54B9B /* PreferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceViewController.h; sourceTree = "<group>"; };
+		424C47801A3B8CD500A54B9B /* PreferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceViewController.m; sourceTree = "<group>"; };
+		4260CE531A1DF815006535AC /* iossimfinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = iossimfinder.entitlements; sourceTree = "<group>"; };
+		4260CE571A1DF8B6006535AC /* ISAppGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISAppGlobal.h; path = src/ISAppGlobal.h; sourceTree = "<group>"; };
+		4260CE581A1DF8B6006535AC /* ISAppGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISAppGlobal.m; path = src/ISAppGlobal.m; sourceTree = "<group>"; };
+		4260CE5A1A1E01CA006535AC /* ISSimulatorDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISSimulatorDevice.h; path = src/ISSimulatorDevice.h; sourceTree = "<group>"; };
+		4260CE5B1A1E01CA006535AC /* ISSimulatorDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISSimulatorDevice.m; path = src/ISSimulatorDevice.m; sourceTree = "<group>"; };
+		4260CE5D1A1E050A006535AC /* ISSimulatorApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISSimulatorApplication.h; path = src/ISSimulatorApplication.h; sourceTree = "<group>"; };
+		4260CE5E1A1E050A006535AC /* ISSimulatorApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISSimulatorApplication.m; path = src/ISSimulatorApplication.m; sourceTree = "<group>"; };
+		4263E5DA1A20DB2D004D6574 /* ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad.png; sourceTree = "<group>"; };
+		4263E5DB1A20DB2D004D6574 /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
+		4263E5DE1A21FF3F004D6574 /* finder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finder.png; sourceTree = "<group>"; };
+		4263E5DF1A21FF3F004D6574 /* terminal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terminal.png; sourceTree = "<group>"; };
+		42799D1C1A27822F003F2266 /* iOS Simulator Finder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iOS Simulator Finder.entitlements"; sourceTree = "<group>"; };
+		42A999891A1C263B00CE1CEA /* ISSimulatorOrganizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISSimulatorOrganizer.h; path = src/ISSimulatorOrganizer.h; sourceTree = "<group>"; };
+		42A9998A1A1C263B00CE1CEA /* ISSimulatorOrganizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISSimulatorOrganizer.m; path = src/ISSimulatorOrganizer.m; sourceTree = "<group>"; };
+		42D1F3671A1FFEBC00A93BB1 /* ISDataSourceDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISDataSourceDevices.h; path = src/ISDataSourceDevices.h; sourceTree = "<group>"; };
+		42D1F3681A1FFEBC00A93BB1 /* ISDataSourceDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISDataSourceDevices.m; path = src/ISDataSourceDevices.m; sourceTree = "<group>"; };
+		42D1F36A1A1FFEDE00A93BB1 /* ISDataSourceApplications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISDataSourceApplications.h; path = src/ISDataSourceApplications.h; sourceTree = "<group>"; };
+		42D1F36B1A1FFEDE00A93BB1 /* ISDataSourceApplications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISDataSourceApplications.m; path = src/ISDataSourceApplications.m; sourceTree = "<group>"; };
+		42D1F36D1A23E83900A93BB1 /* ISSimulatorDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISSimulatorDataContainer.h; path = src/ISSimulatorDataContainer.h; sourceTree = "<group>"; };
+		42D1F36E1A23E83900A93BB1 /* ISSimulatorDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISSimulatorDataContainer.m; path = src/ISSimulatorDataContainer.m; sourceTree = "<group>"; };
+		42D3D6A11D4BFC7100918CCB /* Simulator Data Finder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simulator Data Finder-Bridging-Header.h"; sourceTree = "<group>"; };
+		42D3D6A21D4BFC7200918CCB /* ISBasicHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ISBasicHolder.swift; path = src/ISBasicHolder.swift; sourceTree = "<group>"; };
+		42D403D21A253D8000F1111C /* ISDataSourceDownloads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISDataSourceDownloads.h; path = src/ISDataSourceDownloads.h; sourceTree = "<group>"; };
+		42D403D31A253D8000F1111C /* ISDataSourceDownloads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISDataSourceDownloads.m; path = src/ISDataSourceDownloads.m; sourceTree = "<group>"; };
+		42D403D61A254D7800F1111C /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HelpViewController.h; path = src/HelpViewController.h; sourceTree = "<group>"; };
+		42D403D71A254D7800F1111C /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelpViewController.m; path = src/HelpViewController.m; sourceTree = "<group>"; };
+		42D405E61A26973900F1111C /* helpdialog.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = helpdialog.html; path = resources/helpdialog.html; sourceTree = "<group>"; };
+		42D405E81A26999600F1111C /* needle.hhh */ = {isa = PBXFileReference; lastKnownFileType = text; name = needle.hhh; path = resources/needle.hhh; sourceTree = "<group>"; };
+		42D4A2A71A3B0CFA000745ED /* clipboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clipboard.png; sourceTree = "<group>"; };
+		42D4A2A91A3B3A7C000745ED /* helpdialog.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = helpdialog.rtf; path = resources/helpdialog.rtf; sourceTree = "<group>"; };
+		42EEE2E51A194D4F00E331BC /* Simulator Data Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simulator Data Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EEE2E91A194D4F00E331BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EEE2EA1A194D4F00E331BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42EEE2EB1A194D5000E331BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42EEE2ED1A194D5000E331BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42EEE2EF1A194D5000E331BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		42EEE2F01A194D5000E331BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		42EEE2F21A194D5000E331BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		42EEE3001A194D5000E331BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42EEE3011A194D5000E331BC /* iossimfinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iossimfinderTests.m; sourceTree = "<group>"; };
+		42EF0B4F1A3A3D4F0042E931 /* MainApplication.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainApplication.xib; sourceTree = "<group>"; };
+		42EF0B531A3A53F90042E931 /* HelpWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpWindow.xib; sourceTree = "<group>"; };
+		42F135711B8BBDA4006D186A /* ISSimulatorAppExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISSimulatorAppExtension.h; path = src/ISSimulatorAppExtension.h; sourceTree = "<group>"; };
+		42F135721B8BBDA4006D186A /* ISSimulatorAppExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISSimulatorAppExtension.m; path = src/ISSimulatorAppExtension.m; sourceTree = "<group>"; };
+		42F3FB1E1DD768BB0042A9B1 /* DevMateKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DevMateKit.framework; sourceTree = "<group>"; };
+		42F7ADF01A52DBA4009069B9 /* helpswift.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = helpswift.rtf; path = resources/helpswift.rtf; sourceTree = "<group>"; };
+		42F7ADF21A52DCF6009069B9 /* needle.swifttt */ = {isa = PBXFileReference; lastKnownFileType = text; name = needle.swifttt; path = resources/needle.swifttt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42EEE2E21A194D4F00E331BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420622531D3B6C4B0013A45E /* RZUtils.framework in Frameworks */,
+				420622541D3B6C4B0013A45E /* RZUtilsOSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4206223F1D3B6C2A0013A45E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				420622481D3B6C2A0013A45E /* RZUtils.framework */,
+				4206224A1D3B6C2A0013A45E /* RZUtilsTests.xctest */,
+				427CA2161F8A1AA500CCB696 /* RZUtilsSwift.framework */,
+				427CA2181F8A1AA500CCB696 /* RZUtilsSwiftTests.xctest */,
+				42F3FC0C1DD84DBD0042A9B1 /* RZUtilsUniversal.framework */,
+				42F3FC0E1DD84DBD0042A9B1 /* RZUtilsUniversalTests.xctest */,
+				427CA21A1F8A1AA500CCB696 /* RZUtilsHealthkit.framework */,
+				427CA21C1F8A1AA500CCB696 /* RZUtilsHealthkitTests.xctest */,
+				420622501D3B6C2A0013A45E /* RZUtilsTouch.framework */,
+				420622521D3B6C2A0013A45E /* RZUtilsTouchTests.xctest */,
+				4206224C1D3B6C2A0013A45E /* RZUtilsOSX.framework */,
+				4206224E1D3B6C2A0013A45E /* RZUtilsOSXTests.xctest */,
+				429A3A2620023E7C00671C6C /* RZUtilsTestInfra.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4260CE051A1DF509006535AC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				42EEE2EA1A194D4F00E331BC /* AppDelegate.h */,
+				42EEE2EB1A194D5000E331BC /* AppDelegate.m */,
+				4260CE571A1DF8B6006535AC /* ISAppGlobal.h */,
+				4260CE581A1DF8B6006535AC /* ISAppGlobal.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4260CE4D1A1DF54E006535AC /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		4263E5D91A20DB2D004D6574 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				42EEE2F21A194D5000E331BC /* Images.xcassets */,
+				42D4A2A71A3B0CFA000745ED /* clipboard.png */,
+				4263E5DE1A21FF3F004D6574 /* finder.png */,
+				4263E5DF1A21FF3F004D6574 /* terminal.png */,
+				4263E5DA1A20DB2D004D6574 /* ipad.png */,
+				4263E5DB1A20DB2D004D6574 /* iphone.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		42A9998C1A1C264400CE1CEA /* Simulators */ = {
+			isa = PBXGroup;
+			children = (
+				42A999891A1C263B00CE1CEA /* ISSimulatorOrganizer.h */,
+				42A9998A1A1C263B00CE1CEA /* ISSimulatorOrganizer.m */,
+				4260CE5A1A1E01CA006535AC /* ISSimulatorDevice.h */,
+				4260CE5B1A1E01CA006535AC /* ISSimulatorDevice.m */,
+				4260CE5D1A1E050A006535AC /* ISSimulatorApplication.h */,
+				4260CE5E1A1E050A006535AC /* ISSimulatorApplication.m */,
+				42D1F36D1A23E83900A93BB1 /* ISSimulatorDataContainer.h */,
+				42D1F36E1A23E83900A93BB1 /* ISSimulatorDataContainer.m */,
+				42F135711B8BBDA4006D186A /* ISSimulatorAppExtension.h */,
+				42F135721B8BBDA4006D186A /* ISSimulatorAppExtension.m */,
+			);
+			name = Simulators;
+			sourceTree = "<group>";
+		};
+		42D1F3661A1FFE8800A93BB1 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				42D1F3671A1FFEBC00A93BB1 /* ISDataSourceDevices.h */,
+				42D1F3681A1FFEBC00A93BB1 /* ISDataSourceDevices.m */,
+				42D1F36A1A1FFEDE00A93BB1 /* ISDataSourceApplications.h */,
+				42D1F36B1A1FFEDE00A93BB1 /* ISDataSourceApplications.m */,
+				42D403D21A253D8000F1111C /* ISDataSourceDownloads.h */,
+				42D403D31A253D8000F1111C /* ISDataSourceDownloads.m */,
+				42D3D6A21D4BFC7200918CCB /* ISBasicHolder.swift */,
+				42D3D6A11D4BFC7100918CCB /* Simulator Data Finder-Bridging-Header.h */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		42D403D51A254D5200F1111C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				42EEE2EF1A194D5000E331BC /* ViewController.h */,
+				42EEE2F01A194D5000E331BC /* ViewController.m */,
+				42D403D61A254D7800F1111C /* HelpViewController.h */,
+				42D403D71A254D7800F1111C /* HelpViewController.m */,
+				424C477F1A3B8CD500A54B9B /* PreferenceViewController.h */,
+				424C47801A3B8CD500A54B9B /* PreferenceViewController.m */,
+				42EF0B4F1A3A3D4F0042E931 /* MainApplication.xib */,
+				42EF0B531A3A53F90042E931 /* HelpWindow.xib */,
+				424C477D1A3B8BE000A54B9B /* Preferences.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		42EEE2DC1A194D4F00E331BC = {
+			isa = PBXGroup;
+			children = (
+				4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */,
+				42EEE2E71A194D4F00E331BC /* iossimfinder */,
+				42EEE2FE1A194D5000E331BC /* iossimfinderTests */,
+				42EEE2E61A194D4F00E331BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42EEE2E61A194D4F00E331BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42EEE2E51A194D4F00E331BC /* Simulator Data Finder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42EEE2E71A194D4F00E331BC /* iossimfinder */ = {
+			isa = PBXGroup;
+			children = (
+				4263E5D91A20DB2D004D6574 /* icons */,
+				4260CE4D1A1DF54E006535AC /* Vendor */,
+				4260CE051A1DF509006535AC /* AppDelegate */,
+				42A9998C1A1C264400CE1CEA /* Simulators */,
+				42D1F3661A1FFE8800A93BB1 /* DataSources */,
+				42D403D51A254D5200F1111C /* UI */,
+				42EEE2E81A194D4F00E331BC /* Supporting Files */,
+			);
+			path = iossimfinder;
+			sourceTree = "<group>";
+		};
+		42EEE2E81A194D4F00E331BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42F3FB1D1DD768BB0042A9B1 /* DevMateKit */,
+				42F7ADF21A52DCF6009069B9 /* needle.swifttt */,
+				42799D1C1A27822F003F2266 /* iOS Simulator Finder.entitlements */,
+				42D405E61A26973900F1111C /* helpdialog.html */,
+				4260CE531A1DF815006535AC /* iossimfinder.entitlements */,
+				42EEE2E91A194D4F00E331BC /* Info.plist */,
+				42EEE2ED1A194D5000E331BC /* main.m */,
+				42D405E81A26999600F1111C /* needle.hhh */,
+				42D4A2A91A3B3A7C000745ED /* helpdialog.rtf */,
+				42F7ADF01A52DBA4009069B9 /* helpswift.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42EEE2FE1A194D5000E331BC /* iossimfinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				42EEE3011A194D5000E331BC /* iossimfinderTests.m */,
+				42EEE2FF1A194D5000E331BC /* Supporting Files */,
+			);
+			path = iossimfinderTests;
+			sourceTree = "<group>";
+		};
+		42EEE2FF1A194D5000E331BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42EEE3001A194D5000E331BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42F3FB1D1DD768BB0042A9B1 /* DevMateKit */ = {
+			isa = PBXGroup;
+			children = (
+				42F3FB1E1DD768BB0042A9B1 /* DevMateKit.framework */,
+			);
+			name = DevMateKit;
+			path = ../../shared/DevMateKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42EEE2E41A194D4F00E331BC /* Simulator Data Finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EEE3051A194D5000E331BC /* Build configuration list for PBXNativeTarget "Simulator Data Finder" */;
+			buildPhases = (
+				42EEE2E11A194D4F00E331BC /* Sources */,
+				42EEE2E21A194D4F00E331BC /* Frameworks */,
+				42EEE2E31A194D4F00E331BC /* Resources */,
+				4289C85C1D43CAE400AB07E8 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simulator Data Finder";
+			productName = iossimfinder;
+			productReference = 42EEE2E51A194D4F00E331BC /* Simulator Data Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42EEE2DD1A194D4F00E331BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Brice Rosenzweig";
+				TargetAttributes = {
+					42EEE2E41A194D4F00E331BC = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = M7QSSF3624;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 42EEE2E01A194D4F00E331BC /* Build configuration list for PBXProject "iossimfinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ca,
+				cs,
+				da,
+				de,
+				es,
+				fi,
+				fr,
+				he,
+				hu,
+				it,
+				ja,
+				ko,
+				nb,
+				nl,
+				pl,
+				pt,
+				ru,
+				sk,
+				sv,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 42EEE2DC1A194D4F00E331BC;
+			productRefGroup = 42EEE2E61A194D4F00E331BC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4206223F1D3B6C2A0013A45E /* Products */;
+					ProjectRef = 4206223E1D3B6C2A0013A45E /* RZUtils.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				42EEE2E41A194D4F00E331BC /* Simulator Data Finder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		420622481D3B6C2A0013A45E /* RZUtils.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtils.framework;
+			remoteRef = 420622471D3B6C2A0013A45E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4206224A1D3B6C2A0013A45E /* RZUtilsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsTests.xctest;
+			remoteRef = 420622491D3B6C2A0013A45E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4206224C1D3B6C2A0013A45E /* RZUtilsOSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsOSX.framework;
+			remoteRef = 4206224B1D3B6C2A0013A45E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4206224E1D3B6C2A0013A45E /* RZUtilsOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsOSXTests.xctest;
+			remoteRef = 4206224D1D3B6C2A0013A45E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		420622501D3B6C2A0013A45E /* RZUtilsTouch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsTouch.framework;
+			remoteRef = 4206224F1D3B6C2A0013A45E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		420622521D3B6C2A0013A45E /* RZUtilsTouchTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsTouchTests.xctest;
+			remoteRef = 420622511D3B6C2A0013A45E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		427CA2161F8A1AA500CCB696 /* RZUtilsSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsSwift.framework;
+			remoteRef = 427CA2151F8A1AA500CCB696 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		427CA2181F8A1AA500CCB696 /* RZUtilsSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsSwiftTests.xctest;
+			remoteRef = 427CA2171F8A1AA500CCB696 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		427CA21A1F8A1AA500CCB696 /* RZUtilsHealthkit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsHealthkit.framework;
+			remoteRef = 427CA2191F8A1AA500CCB696 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		427CA21C1F8A1AA500CCB696 /* RZUtilsHealthkitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsHealthkitTests.xctest;
+			remoteRef = 427CA21B1F8A1AA500CCB696 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		429A3A2620023E7C00671C6C /* RZUtilsTestInfra.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsTestInfra.framework;
+			remoteRef = 429A3A2520023E7C00671C6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42F3FC0C1DD84DBD0042A9B1 /* RZUtilsUniversal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RZUtilsUniversal.framework;
+			remoteRef = 42F3FC0B1DD84DBD0042A9B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		42F3FC0E1DD84DBD0042A9B1 /* RZUtilsUniversalTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RZUtilsUniversalTests.xctest;
+			remoteRef = 42F3FC0D1DD84DBD0042A9B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42EEE2E31A194D4F00E331BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EF0B501A3A3D4F0042E931 /* MainApplication.xib in Resources */,
+				42D405E71A26973900F1111C /* helpdialog.html in Resources */,
+				42D4A2A81A3B0CFA000745ED /* clipboard.png in Resources */,
+				42EF0B541A3A53F90042E931 /* HelpWindow.xib in Resources */,
+				42F7ADF11A52DBA4009069B9 /* helpswift.rtf in Resources */,
+				4263E5DD1A20DB2D004D6574 /* iphone.png in Resources */,
+				42D4A2AA1A3B3A7C000745ED /* helpdialog.rtf in Resources */,
+				4263E5E11A21FF3F004D6574 /* terminal.png in Resources */,
+				42EEE2F31A194D5000E331BC /* Images.xcassets in Resources */,
+				4263E5E01A21FF3F004D6574 /* finder.png in Resources */,
+				42D405E91A269BE500F1111C /* needle.hhh in Resources */,
+				424C477E1A3B8BE000A54B9B /* Preferences.xib in Resources */,
+				42F7ADF31A52DD38009069B9 /* needle.swifttt in Resources */,
+				4263E5DC1A20DB2D004D6574 /* ipad.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42EEE2E11A194D4F00E331BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EEE2F11A194D5000E331BC /* ViewController.m in Sources */,
+				4260CE5F1A1E050A006535AC /* ISSimulatorApplication.m in Sources */,
+				42D1F36F1A23E83900A93BB1 /* ISSimulatorDataContainer.m in Sources */,
+				42D403D81A254D7800F1111C /* HelpViewController.m in Sources */,
+				4260CE591A1DF8B6006535AC /* ISAppGlobal.m in Sources */,
+				42EEE2EE1A194D5000E331BC /* main.m in Sources */,
+				42A9998B1A1C263B00CE1CEA /* ISSimulatorOrganizer.m in Sources */,
+				42D1F3691A1FFEBC00A93BB1 /* ISDataSourceDevices.m in Sources */,
+				42F135731B8BBDA4006D186A /* ISSimulatorAppExtension.m in Sources */,
+				424C47811A3B8CD500A54B9B /* PreferenceViewController.m in Sources */,
+				42EEE2EC1A194D5000E331BC /* AppDelegate.m in Sources */,
+				4260CE5C1A1E01CA006535AC /* ISSimulatorDevice.m in Sources */,
+				42D403D41A253D8000F1111C /* ISDataSourceDownloads.m in Sources */,
+				42D3D6A31D4BFC7200918CCB /* ISBasicHolder.swift in Sources */,
+				42D1F36C1A1FFEDE00A93BB1 /* ISDataSourceApplications.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		42EEE3031A194D5000E331BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42EEE3041A194D5000E331BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		42EEE3061A194D5000E331BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "iossimfinder/iOS Simulator Finder.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					"DEBUG=1",
+					"$(inherited)",
+					"RZLOG_CONSOLE_OUTPUT=1",
+				);
+				INFOPLIST_FILE = iossimfinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"\"$(PROJECT_DIR)/iossimfinder/Kevlar/libkevlar.a\"",
+					"-lc++",
+					"-framework",
+					Security,
+					"-framework",
+					IOKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ro-z.iOS-Simulator-Finder";
+				PRODUCT_NAME = "Simulator Data Finder";
+				SWIFT_OBJC_BRIDGING_HEADER = "iossimfinder/Simulator Data Finder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		42EEE3071A194D5000E331BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "iossimfinder/iOS Simulator Finder.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = iossimfinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"\"$(PROJECT_DIR)/iossimfinder/Kevlar/libkevlar.a\"",
+					"-lc++",
+					"-framework",
+					Security,
+					"-framework",
+					IOKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ro-z.iOS-Simulator-Finder";
+				PRODUCT_NAME = "Simulator Data Finder";
+				SWIFT_OBJC_BRIDGING_HEADER = "iossimfinder/Simulator Data Finder-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42EEE2E01A194D4F00E331BC /* Build configuration list for PBXProject "iossimfinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EEE3031A194D5000E331BC /* Debug */,
+				42EEE3041A194D5000E331BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EEE3051A194D5000E331BC /* Build configuration list for PBXNativeTarget "Simulator Data Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EEE3061A194D5000E331BC /* Debug */,
+				42EEE3071A194D5000E331BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42EEE2DD1A194D4F00E331BC /* Project object */;
+}

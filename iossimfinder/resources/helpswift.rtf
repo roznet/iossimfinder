@@ -1,0 +1,47 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fmodern\fcharset0 Courier;\f2\fnil\fcharset0 Consolas;
+\f3\fswiss\fcharset0 Helvetica;\f4\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red116\green0\blue236;\red170\green13\blue145;\red92\green38\blue153;
+\red100\green56\blue32;\red38\green71\blue75;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw12240\paperh15840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\b\fs28 \cf0 First use
+\b0 \expnd0\expndtw0\kerning0
+\
+You need to select and authorise the app to read the devices directory of the simulator. The app should guess it and present it when it starts.\
+If you pressed cancel or selected the wrong directory you can select and authorize a new one in the preferences window.\
+\
+
+\b \kerning1\expnd0\expndtw0 Setup to find data containers
+\b0 \expnd0\expndtw0\kerning0
+\
+The location of the data container in the iOS Simulator changes every time you start an app. For Simulator Data Finder to report the current location, you need to add a use a small macro as below:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+save the swift file containing the function 
+\f1\fs26 \expnd0\expndtw0\kerning0
+RZSimNeedle
+\f0\fs28 \expnd0\expndtw0\kerning0
+ and include it in your project.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+import that file and add the following line to your 
+\f2 \cf2 \expnd0\expndtw0\kerning0
+UIApplicationDelegate
+\f0 \cf0 \expnd0\expndtw0\kerning0
+ as below:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx529\pardeftab529\pardirnatural
+
+\f4\fs22 \cf0 \CocoaLigature0     \cf3 func\cf0  application(application: \cf4 UIApplication\cf0 !, didFinishLaunchingWithOptions launchOptions: \cf4 NSDictionary\cf0 !) -> \cf4 Bool\cf0  \{\
+        \cf5 #if\cf0  \cf5 arch\cf0 (\cf5 i386\cf0 ) || \cf5 arch\cf0 (\cf5 x86_64\cf0 )\
+            \cf6 RZSimNeedle\cf0 ()\
+        \cf5 #endif\cf0 \
+        \cf3 return\cf0  \cf3 true\cf0 \
+    \}\
+}

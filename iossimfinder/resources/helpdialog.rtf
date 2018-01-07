@@ -1,0 +1,60 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fmodern\fcharset0 Courier;\f2\fnil\fcharset0 Consolas;
+}
+{\colortbl;\red255\green255\blue255;\red116\green0\blue236;\red209\green0\blue17;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw12240\paperh15840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\b\fs28 \cf0 First use
+\b0 \expnd0\expndtw0\kerning0
+\
+You need to select and authorise the app to read the devices directory of the simulator. The app should guess it and present it when it starts.\
+If you pressed cancel or selected the wrong directory you can select and authorize a new one in the preferences window.\
+\
+
+\b \kerning1\expnd0\expndtw0 Setup to find data containers
+\b0 \expnd0\expndtw0\kerning0
+\
+The location of the data container in the iOS Simulator changes every time you start an app. For Simulator Data Finder to report the current location, you need to add a use a small macro as below:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+save the header file containing the macro 
+\f1\fs26 \expnd0\expndtw0\kerning0
+RZSimNeedle
+\f0\fs28 \expnd0\expndtw0\kerning0
+ and include it in your project.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+import that file and add the following line to your 
+\f2 \cf2 \expnd0\expndtw0\kerning0
+UIApplicationDelegate
+\f0 \cf0 \expnd0\expndtw0\kerning0
+ as below:\
+\pard\tx560\pardeftab720
+
+\f2 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 - (\cf2 \expnd0\expndtw0\kerning0
+BOOL\cf0 \expnd0\expndtw0\kerning0
+)application:(\cf2 \expnd0\expndtw0\kerning0
+UIApplication\cf0 \expnd0\expndtw0\kerning0
+ *)application\
+  didFinishLaunchingWithOptions:(\cf2 \expnd0\expndtw0\kerning0
+NSDictionary\cf0 \expnd0\expndtw0\kerning0
+ *)launchOptions\
+\{\
+    \cf3 \expnd0\expndtw0\kerning0
+RZSimNeedle\cf0 \expnd0\expndtw0\kerning0
+();\
+
+\f1\fs22 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f0\fs28 \cf0 \expnd0\expndtw0\kerning0
+The macro will create a hidden file of zero size in the document directory so Simulator Data Finder can find it later.\
+\
+You can check the web site or the header file for more details.}

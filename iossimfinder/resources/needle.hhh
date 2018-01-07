@@ -1,0 +1,36 @@
+//
+//  needle.h
+//  Needle for iOS Simulator Finder
+//
+//  You are free to do whatever you want with this file: modify it, use it, don't use it, no copyrights.
+
+/*  This macro needs to be called from your UIApplicationDelegate as below:
+ 
+ - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+ {
+     RZSimNeedle();
+
+ 
+    As the iOS Simulator changes the name of the data container each time
+    the application start, this macro will save a small file so iOS Simulator Finder
+    can later identify the data container and give quick access.
+ 
+    Note that the file will be hidden and of zero size, so should not create too much burden on 
+    your hard disk.
+ 
+    Note also that when you run your app on your device or submit to the store the macro will do
+    nothing, so no file will clutter iOS devices either.
+
+    The macro also logs the path of the data container which I find convenient. You can delete that 
+    line if you don't like it. Delete the line that starts with NSLog
+*/
+
+#if TARGET_IPHONE_SIMULATOR
+#define RZSimNeedle() { \
+NSString * __rzSimNeedlePath = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES)[0];\
+NSLog(@"Simulator: %@", __rzSimNeedlePath);\
+[[NSData data] writeToFile:[NSString stringWithFormat:@"%@/.simneedle.%@", __rzSimNeedlePath, [[NSBundle mainBundle] bundleIdentifier]] atomically:YES];\
+};
+#else
+#define RZSimNeedle();
+#endif

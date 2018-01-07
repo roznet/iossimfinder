@@ -425,7 +425,7 @@
 					42EEE2E41A194D4F00E331BC = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = M7QSSF3624;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -753,7 +753,8 @@
 				PRODUCT_NAME = "Simulator Data Finder";
 				SWIFT_OBJC_BRIDGING_HEADER = "iossimfinder/Simulator Data Finder-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -782,7 +783,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ro-z.iOS-Simulator-Finder";
 				PRODUCT_NAME = "Simulator Data Finder";
 				SWIFT_OBJC_BRIDGING_HEADER = "iossimfinder/Simulator Data Finder-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

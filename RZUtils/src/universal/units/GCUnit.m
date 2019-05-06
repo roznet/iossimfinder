@@ -223,7 +223,8 @@ void registerUnits(){
 
             registerSimpl0( @[ @"strokesPerMinute", @"strokes/min", @"strokes/min"]);
 
-
+            registerSimple( @[ @"c/Hr", @"c/Hr", @"c/Hr"]); // Energy Expenditure
+            
             registerLinea0( @[ @"kilocalorie", @"Calories", @"C"], @"kilocalorie", 1., 0. );
             registerLinear( @[ @"kilojoule", @"Kilojoule", @"kj"], @"kilocalorie", GCUNIT_JOULES, 0.);
             registerLinear( @[ @"joule", @"joule", @"J"], @"kilocalorie", GCUNIT_JOULES/1000., 0.);
@@ -524,6 +525,17 @@ void registerUnits(){
     return aKey ? _unitsRegistry[aKey] : nil;
 }
 
++(nonnull GCUnit*)unitForAny:(nonnull NSString*)aKey{
+    if (!_unitsRegistry) {
+        registerUnits();
+    }
+    GCUnit * exist = _unitsRegistry[aKey];
+    if( ! exist ){
+        registerSimple( @[ aKey, aKey, aKey]);
+        exist = _unitsRegistry[aKey];
+    }
+    return exist;
+}
 -(BOOL)matchString:(NSString*)aStr{
     return [_abbr isEqualToString:aStr] || [_key isEqualToString:aStr] || [_display isEqualToString:aStr];
 }

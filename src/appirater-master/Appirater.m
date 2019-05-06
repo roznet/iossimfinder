@@ -716,18 +716,19 @@ static BOOL _alwaysUseMainBundle = NO;
             reviewURL = [templateReviewURLiOS8 stringByReplacingOccurrencesOfString:@"APP_ID" withString:_appId];
         }
 
-		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:reviewURL]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:reviewURL] options:@{} completionHandler:nil];
 		#endif
 	}
 }
 
+/*
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     [self alertViewDidDismissWithButtonIndex:buttonIndex];
 }
 #pragma clang diagnostic pop
-
+*/
 - (void)alertViewDidDismissWithButtonIndex:(NSInteger)buttonIndex {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     

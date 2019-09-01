@@ -14,10 +14,6 @@
 		4260CE591A1DF8B6006535AC /* ISAppGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260CE581A1DF8B6006535AC /* ISAppGlobal.m */; };
 		4260CE5C1A1E01CA006535AC /* ISSimulatorDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260CE5B1A1E01CA006535AC /* ISSimulatorDevice.m */; };
 		4260CE5F1A1E050A006535AC /* ISSimulatorApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260CE5E1A1E050A006535AC /* ISSimulatorApplication.m */; };
-		4263E5DC1A20DB2D004D6574 /* ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4263E5DA1A20DB2D004D6574 /* ipad.png */; };
-		4263E5DD1A20DB2D004D6574 /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4263E5DB1A20DB2D004D6574 /* iphone.png */; };
-		4263E5E01A21FF3F004D6574 /* finder.png in Resources */ = {isa = PBXBuildFile; fileRef = 4263E5DE1A21FF3F004D6574 /* finder.png */; };
-		4263E5E11A21FF3F004D6574 /* terminal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4263E5DF1A21FF3F004D6574 /* terminal.png */; };
 		42A9998B1A1C263B00CE1CEA /* ISSimulatorOrganizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A9998A1A1C263B00CE1CEA /* ISSimulatorOrganizer.m */; };
 		42D1F3691A1FFEBC00A93BB1 /* ISDataSourceDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1F3681A1FFEBC00A93BB1 /* ISDataSourceDevices.m */; };
 		42D1F36C1A1FFEDE00A93BB1 /* ISDataSourceApplications.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1F36B1A1FFEDE00A93BB1 /* ISDataSourceApplications.m */; };
@@ -29,7 +25,6 @@
 		42D403D81A254D7800F1111C /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D403D71A254D7800F1111C /* HelpViewController.m */; };
 		42D405E71A26973900F1111C /* helpdialog.html in Resources */ = {isa = PBXBuildFile; fileRef = 42D405E61A26973900F1111C /* helpdialog.html */; };
 		42D405E91A269BE500F1111C /* needle.hhh in Resources */ = {isa = PBXBuildFile; fileRef = 42D405E81A26999600F1111C /* needle.hhh */; };
-		42D4A2A81A3B0CFA000745ED /* clipboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D4A2A71A3B0CFA000745ED /* clipboard.png */; };
 		42D4A2AA1A3B3A7C000745ED /* helpdialog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42D4A2A91A3B3A7C000745ED /* helpdialog.rtf */; };
 		42EEE2EC1A194D5000E331BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE2EB1A194D5000E331BC /* AppDelegate.m */; };
 		42EEE2EE1A194D5000E331BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EEE2ED1A194D5000E331BC /* main.m */; };
@@ -163,10 +158,6 @@
 		4260CE5B1A1E01CA006535AC /* ISSimulatorDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISSimulatorDevice.m; path = src/ISSimulatorDevice.m; sourceTree = "<group>"; };
 		4260CE5D1A1E050A006535AC /* ISSimulatorApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISSimulatorApplication.h; path = src/ISSimulatorApplication.h; sourceTree = "<group>"; };
 		4260CE5E1A1E050A006535AC /* ISSimulatorApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISSimulatorApplication.m; path = src/ISSimulatorApplication.m; sourceTree = "<group>"; };
-		4263E5DA1A20DB2D004D6574 /* ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipad.png; sourceTree = "<group>"; };
-		4263E5DB1A20DB2D004D6574 /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
-		4263E5DE1A21FF3F004D6574 /* finder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finder.png; sourceTree = "<group>"; };
-		4263E5DF1A21FF3F004D6574 /* terminal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = terminal.png; sourceTree = "<group>"; };
 		42799D1C1A27822F003F2266 /* iOS Simulator Finder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iOS Simulator Finder.entitlements"; sourceTree = "<group>"; };
 		42A999891A1C263B00CE1CEA /* ISSimulatorOrganizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ISSimulatorOrganizer.h; path = src/ISSimulatorOrganizer.h; sourceTree = "<group>"; };
 		42A9998A1A1C263B00CE1CEA /* ISSimulatorOrganizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ISSimulatorOrganizer.m; path = src/ISSimulatorOrganizer.m; sourceTree = "<group>"; };
@@ -184,7 +175,6 @@
 		42D403D71A254D7800F1111C /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HelpViewController.m; path = src/HelpViewController.m; sourceTree = "<group>"; };
 		42D405E61A26973900F1111C /* helpdialog.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = helpdialog.html; path = resources/helpdialog.html; sourceTree = "<group>"; };
 		42D405E81A26999600F1111C /* needle.hhh */ = {isa = PBXFileReference; lastKnownFileType = text; name = needle.hhh; path = resources/needle.hhh; sourceTree = "<group>"; };
-		42D4A2A71A3B0CFA000745ED /* clipboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clipboard.png; sourceTree = "<group>"; };
 		42D4A2A91A3B3A7C000745ED /* helpdialog.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = helpdialog.rtf; path = resources/helpdialog.rtf; sourceTree = "<group>"; };
 		42EEE2E51A194D4F00E331BC /* Simulator Data Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simulator Data Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EEE2E91A194D4F00E331BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -260,11 +250,6 @@
 			isa = PBXGroup;
 			children = (
 				42EEE2F21A194D5000E331BC /* Images.xcassets */,
-				42D4A2A71A3B0CFA000745ED /* clipboard.png */,
-				4263E5DE1A21FF3F004D6574 /* finder.png */,
-				4263E5DF1A21FF3F004D6574 /* terminal.png */,
-				4263E5DA1A20DB2D004D6574 /* ipad.png */,
-				4263E5DB1A20DB2D004D6574 /* iphone.png */,
 			);
 			path = icons;
 			sourceTree = "<group>";
@@ -440,6 +425,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				ca,
@@ -581,18 +567,13 @@
 			files = (
 				42EF0B501A3A3D4F0042E931 /* MainApplication.xib in Resources */,
 				42D405E71A26973900F1111C /* helpdialog.html in Resources */,
-				42D4A2A81A3B0CFA000745ED /* clipboard.png in Resources */,
 				42EF0B541A3A53F90042E931 /* HelpWindow.xib in Resources */,
 				42F7ADF11A52DBA4009069B9 /* helpswift.rtf in Resources */,
-				4263E5DD1A20DB2D004D6574 /* iphone.png in Resources */,
 				42D4A2AA1A3B3A7C000745ED /* helpdialog.rtf in Resources */,
-				4263E5E11A21FF3F004D6574 /* terminal.png in Resources */,
 				42EEE2F31A194D5000E331BC /* Images.xcassets in Resources */,
-				4263E5E01A21FF3F004D6574 /* finder.png in Resources */,
 				42D405E91A269BE500F1111C /* needle.hhh in Resources */,
 				424C477E1A3B8BE000A54B9B /* Preferences.xib in Resources */,
 				42F7ADF31A52DD38009069B9 /* needle.swifttt in Resources */,
-				4263E5DC1A20DB2D004D6574 /* ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
